@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-df = pd.read_csv('/home/ubuntu/SMSML_Nama-siswa/namadataset_raw/WA_Fn-UseC_-Telco-Customer-Churn.csv')
+df = pd.read_csv('namadataset_raw/WA_Fn-UseC_-Telco-Customer-Churn.csv')
 
 # Display the first 5 rows of the dataframe
 print('First 5 rows of the dataset:')
