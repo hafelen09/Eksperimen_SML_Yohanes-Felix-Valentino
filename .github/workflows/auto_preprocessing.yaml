@@ -3,11 +3,13 @@ name: Automatic Data Preprocessing
 on:
   push:
     branches:
-      - main # atau master, sesuaikan dengan nama branch utama Anda
+      - main
 
 jobs:
   preprocess:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Memberikan izin pada workflow untuk melakukan push
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -23,7 +25,6 @@ jobs:
           pip install pandas
 
       - name: Run preprocessing script
-        # PASTIKAN NAMA FILE INI BENAR
         run: python preprocessing/automate_Yohanes-Felix-Valentino.py
 
       - name: Commit and push if it changed
