@@ -37,7 +37,7 @@ def preprocess_data(input_path, output_path):
 
 if __name__ == "__main__":
     # Definisikan path input dan output
-    raw_data_path = '../telco-customer-churn_raw/WA_Fn-UseC_-Telco-Customer-Churn.csv'
+    raw_data_path = 'telco-customer-churn_raw/WA_Fn-UseC_-Telco-Customer-Churn.csv'
     processed_data_path = 'telco-customer-churn_preprocessing/churn_data_processed.csv'
 
     # Jalankan fungsi preprocessing
