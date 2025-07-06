@@ -24,7 +24,7 @@ jobs:
 
       - name: Run preprocessing script
         # PASTIKAN NAMA FILE INI BENAR
-        run: python preprocessing/automate_Yohanes-Felix_Valentino.py
+        run: python preprocessing/automate_Yohanes-Felix-Valentino.py
 
       - name: Commit and push if it changed
         run: |
